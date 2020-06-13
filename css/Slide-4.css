@@ -1,0 +1,36 @@
+/*NAVBAR START*/
+#navbar-btn{
+    border-color: rgba(0,0,0,0);
+    margin-left: auto;	
+    border: 0px transparent;
+}
+
+.navbar-toggler-icon{
+	font-size: x-large;
+}
+
+.nav-link{
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+/*NAVBAR ENDS*/
+
+
+/*BODY START*/
+
+.form-input{
+	background-color:brown; 
+	color:brown !important;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white !important;
+}
+
+.form-link{
+    /*color: chartreuse;*/
+    color: #28a745!important;
+    font-size: larger;
+}
+
+/*BODY ENDS*/

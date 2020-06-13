@@ -1,0 +1,280 @@
+@import url("preset.css");
+
+.wrapper{
+    display:grid;
+    grid-template-columns: 1.5fr 1fr;
+    margin-top:5vh;
+    grid-gap:2rem;
+}
+
+body{
+    height:100%;
+}
+
+
+
+.toggle-menu span{
+    display:block;
+    height:2px;
+    width:30px;
+    background:#fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle-menu span::before,.toggle-menu span::after{
+    content:'';
+    position: absolute;
+    height:100%;
+    width:100%;
+    background:#fff;
+    cursor: pointer;
+
+}
+
+.toggle-menu span::before{
+    top:-7px;
+}
+
+.toggle-menu span::after{
+    bottom:-7px;
+}
+
+
+.transparent span{
+    background:transparent;
+    transition:0.5s ease-in-out;
+}
+
+.transparent span::before{
+    transition:0.5s ease-in-out;
+    background:transparent;
+}
+
+.transparent span::after{
+    transition:0.5s ease-in-out;
+    background:transparent;
+
+}
+
+
+.side-menu{
+    left:-100%;
+    transition:0.5s ease-in-out;
+    position: fixed;
+    z-index:2;
+    background:rgba(0, 0, 0, 0.904);
+    height:100vh;
+    padding-top:2rem;
+    width:250px;
+}
+
+.side_menu_exit{
+    position: absolute;
+    right:1rem;
+    top:2rem;
+    background:#fff;
+    height:2px;
+    width:30px;
+    display:block; 
+    transform:rotate(45deg);
+    cursor:pointer;
+}
+
+.side_menu_exit::before{
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:#fff;
+    transform: rotate(-90deg);
+}
+
+.profile{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:20%;
+    margin-bottom:2rem;
+}
+
+.picture{
+    overflow:hidden;
+    border-radius:50%;
+    width:50%;
+    height:100%;
+}
+
+.picture img{
+    height: 100%;
+    width:100%;
+}
+
+.main-side-menu{
+    /* margin-left:2rem; */
+    color:#fff;
+    
+}
+
+.main-side-menu ul li{
+    margin-bottom:1rem;
+    text-transform: uppercase;
+    text-align:center;
+    letter-spacing:1px;
+}
+
+
+
+.selected-category-info h3{
+    color:#fff;
+    font-weight:400;
+    margin-bottom:10px;
+    text-shadow: 1px -1px 4px yellowgreen;
+}
+
+.investment_summary{color:#f2f2f2;position: relative;}
+
+.investment_summary h3{
+    color:#fff;
+    font-weight:400;
+    margin-bottom:10px;
+}
+
+.investment_summary ul{
+   display:flex;
+   flex-direction:column;
+   margin-top:3rem;
+}
+
+.investment_summary ul li{
+    position: relative;
+    margin-bottom: 5px;
+    padding:10px 1rem;
+    background:rgba(255, 255, 255, 0.212);
+    border-radius: 5px;
+}
+
+.investment_summary ul li span{
+    position: absolute;
+    right:1rem;
+}
+
+.investment_summary ul li input{
+    width:50px;
+}
+
+
+.payment_buttons_container{
+    /* text-align:center; */
+    margin-top:1rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pay_now{
+    color:#fff;
+    background:rgb(7, 212, 168);
+    padding:10px 20px;
+    display:block;
+    width:fit-content;
+    margin-bottom:5px;
+}
+
+.transfer{
+    color:#fff;
+    background:rgb(7, 161, 79);
+    padding:10px 20px;
+    display:block;
+    width:fit-content;
+    margin-top:5px;
+}
+
+/* Selected plan */
+
+.selected-plan{
+    background:var(--gold);
+    padding:20px 1rem;
+
+}
+
+.image{
+    height:100px;
+    width:100px;
+    overflow:hidden;
+    border-radius: 50%;
+    margin:auto;
+    margin-bottom:2rem;
+    background:rgba(255, 255, 255, 0.383);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.image img{
+    height:50%;
+    /* width:100%; */
+    z-index:0;
+    position: absolute;
+}
+
+.image span{
+    position:absolute;
+    z-index:1;
+    height:100%;
+    width:100%;
+    background:rgba(67, 71, 6, 0.383);
+    font-size:30px;
+    color:#fff;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plan-list ul li{
+    padding:10px 1rem;
+    border:1px solid rgba(255, 255, 255, 0.383);
+    color:#ddd;
+    margin-bottom:5px;
+    background:rgba(223, 216, 216, 0.13);
+}
+
+
+/* End selected plan */
+.management_dashboard_redirect{
+    width:100%;
+    color:#fff;
+    background:var(--silver);
+    padding:20px 10px;
+    text-align:center;
+    display:block;
+}
+
+@media(max-width:1070px){
+    .investment_summary ul li span{
+        display:block;
+        position: static;
+    }
+
+    .investment_summary ul{
+        margin-top:1rem;
+    }
+}
+
+@media(max-width:690px){
+    .wrapper{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* The select and number inputs */
+select,input[type="number"]{
+    outline:none;
+    border:none;
+    /* background:rgb(15, 97, 100); */
+    padding:2px 5px;
+    color:#333;
+    border-radius:5px;
+}

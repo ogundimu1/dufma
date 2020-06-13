@@ -1,0 +1,76 @@
+@import url("preset.css");
+
+body,html{
+    padding:0;
+}
+
+.backdrop{
+    height:100%;
+    background:#000;
+    opacity:0.8;
+    position: fixed;
+    z-index:1;
+    width:100vw;
+}
+
+.payment_form{
+    display:flex;
+    height:100vh;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    margin-top:5vh;
+    z-index:2;
+    position: relative;
+
+
+}
+
+h2{
+    color:#f2f2f2;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+form{
+    background:rgb(8, 97, 89);
+    width:fit-content;
+    padding:2rem 30px 1rem 30px;
+    border-radius: 5px;
+    position: relative;
+   
+}
+
+form input,label{
+    display:block;
+}
+
+form p{
+    margin-bottom:1rem;
+    padding:0 10px;
+}
+
+form label{
+    color:#fff;
+}
+
+form input,select{
+    padding:5px;
+    outline:none;
+    border:none;
+}
+
+input[type="submit"]{
+    color:#fff;
+    background:yellowgreen;
+    padding:10px 20px;
+    border-radius:5px;
+    letter-spacing: 1px;
+}
+
+.submit_holder{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:1rem;
+}

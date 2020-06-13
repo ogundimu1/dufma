@@ -1,0 +1,29 @@
+/*NAVBAR START*/
+#navbar-btn{
+    border-color: rgba(0,0,0,0);
+    margin-left: auto;	
+    border: 0px transparent;
+}
+
+.navbar-toggler-icon{
+	font-size: x-large;
+}
+
+.nav-link{
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+/*NAVBAR ENDS*/
+
+
+
+/*BODY START*/
+
+.rounded-circle{
+	padding: 2rem!important;
+	margin: 2rem!important;
+
+}
+
+
+/*BODY ENDS*/

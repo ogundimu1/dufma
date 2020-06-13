@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration:none;
+}
+
+body,html{
+    font-family:sans-serif;
+    background:rgb(7, 76, 97);
+    overflow-x:hidden;
+    padding:1rem;
+}
+
+
+:root{
+    --gold:rgb(172, 147, 7);
+    --bronze:rgb(6, 107, 133);
+    --silver:rgb(4, 136, 114);
+}

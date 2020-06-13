@@ -1,0 +1,135 @@
+@import url("preset.css");
+
+.header-text{color:#fff;font-weight:400;}
+
+.wrapper{
+    display:grid;
+    grid-template-columns:70% 30%;
+    grid-gap:2rem;
+}
+
+
+.plans{
+    display:flex;
+    /* align-items: center; */
+    justify-content: center;
+    margin-top:10vh;
+}
+
+.bronze,.silver,.gold{margin-right:2rem;padding:20px 1rem;box-shadow: 1px 1px 4px 1px rgb(114, 159, 189),-1px -1px 4px 1px rgb(114, 159, 189);}
+.gold{margin-right:0;}
+.bronze{background:var(--bronze);}
+.silver{background: var(--silver);}
+.gold{background:var(--gold);}
+
+.image{
+    height:100px;
+    width:100px;
+    overflow:hidden;
+    border-radius: 50%;
+    margin:auto;
+    margin-bottom:2rem;
+    background:rgba(255, 255, 255, 0.383);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.image img{
+    height:50%;
+    /* width:100%; */
+    z-index:0;
+    position: absolute;
+}
+
+.image span{
+    position:absolute;
+    z-index:1;
+    height:100%;
+    width:100%;
+    background:rgba(67, 71, 6, 0.383);
+    font-size:30px;
+    color:#fff;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plan-list ul li{
+    padding:10px 1rem;
+    border:1px solid rgba(255, 255, 255, 0.383);
+    color:#ddd;
+    margin-bottom:5px;
+    background:rgba(223, 216, 216, 0.13);
+}
+
+
+.invest h3{
+    background:#fff;
+    padding:10px;
+    width:50%;
+    text-align:center;
+    font-weight:400;
+    color:#333;
+    margin-left:1rem;
+}
+
+.invest-form{
+    padding-left:1rem;
+    padding-top:2rem;
+    padding-bottom:2rem;
+    /* background:rgba(0, 0, 0, 0.39); */
+    /* margin-top:1rem; */
+    width:80%;
+}
+
+.invest-form p{
+    margin-bottom:10px;
+}
+
+.invest-form input,label,select{
+    display:block;
+}
+
+.invest-form label{
+    color:#f2f2f2;
+    margin-bottom:2px;
+}
+
+.invest-form input,select{
+    padding:7px 5px;
+    border-radius: 5px;
+    border:1px solid transparent;
+    transition:0.5s ease-in-out;
+}
+
+.invest-form input:focus,select:focus{
+    border-color:greenyellow;
+    outline:none;
+}
+
+
+.invest-form input[type="submit"]{
+    padding:12px 20px;
+    background:greenyellow;
+    outline:none;
+    border:none;
+    color:#333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@media(max-width:1100px){
+    .bronze,.silver,.gold{margin-right:1rem;}
+}
+
+@media(max-width:900px){
+    .wrapper{grid-template-columns: 1fr;}
+    .plans{margin-top:3vh;}
+}
+
+@media(max-width:700px){
+    .plans{flex-direction:column;}
+    .bronze,.silver{margin-bottom:1rem;}
+}
