@@ -3,14 +3,14 @@
 include('connection.php');
 
 //posting farm investor details
-$name_investor = $_POST['name_investor'];
-$email = $_POST['email'];
-$phone = $_POST['phone'];
-$category = $_POST['category'];
-$dura_invest = $_POST['dura_invest'];
-$unit = $_POST['unit'];
-$v_unit = $_POST['v_unit'];
-$roi = $_POST['roi'];
+$name_investor = mysqli_real_escape_string($conn, $_POST['name_investor']);
+$email = mysqli_real_escape_string($conn, $_POST['email']);
+$phone = mysqli_real_escape_string($conn, $_POST['phone']);
+$category = mysqli_real_escape_string($conn, $_POST['category']);
+$dura_invest = mysqli_real_escape_string($conn, $_POST['dura_invest']);
+$unit = mysqli_real_escape_string($conn, $_POST['unit']);
+$v_unit = mysqli_real_escape_string($conn, $_POST['v_unit']);
+$roi = mysqli_real_escape_string($conn, $_POST['roi']);
 
 //roi value
 $bronze = "Bronze";
